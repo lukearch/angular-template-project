@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularjs-base-project": {
+    "angularjs-template-project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angularjs-base-project",
+            "outputPath": "dist/angularjs-template-project",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angularjs-base-project:build:production"
+              "browserTarget": "angularjs-template-project:build:production"
             },
             "development": {
-              "browserTarget": "angularjs-base-project:build:development"
+              "browserTarget": "angularjs-template-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angularjs-base-project:build"
+            "browserTarget": "angularjs-template-project:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
       }
     }
   },
-  "defaultProject": "angularjs-base-project",
+  "defaultProject": "angularjs-template-project",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }
