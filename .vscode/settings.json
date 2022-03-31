@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.js": "javascriptreact",
+    ".stylelintrc": "json"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "typescript"]
+}
